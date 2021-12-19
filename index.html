@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>JSON Editor Online - view, edit and format JSON online - MoiVui.com</title>
+	<meta name="description" content="JSON Editor Online is a web-based tool to view, edit, and format JSON. It shows your data side by side in a clear, editable treeview and in a code editor.">
+	<meta name="keywords" content="json, editor, formatter, online, format, parser, json editor, json editor online, online json editor, javascript, javascript object notation, tools, tool, json tools, treeview, open source, free, json parser, json parser online, json formatter, json formatter online, online json formatter, online json parser, format json online">
+	<meta name="author" content="MoiVui.com">
+	<link rel="icon" type="image/png" href="/images/logo-moivui-64.png">
+	<link rel="stylesheet" type="text/css" href="app.min.css">
+	<script type="text/javascript" src="app.min.js" charset="utf-8"></script>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({ 
+		google_ad_client: "ca-pub-5261703613038425",
+		enable_page_level_ads: true 
+	});
+	</script>
+</head>
+<body>
+<div id="header">
+	<a href="" class="header">
+		<img alt="JSON Editor Online" title="JSON Editor Online" src="/images/logo-moivui-64.png" id="logo">
+		JSON Editor Online - MoiVui.com
+	</a>
+	
+	<div id="name-menu">
+		<div id="name" title="Document name. Click to change"></div>
+		<div id="name-status" title="Changes are automatically saved online"></div>
+	</div>
+
+	<div id="menu">
+		<ul>
+			<li>
+				<a id="new" title="Open a new, empty document">New</a>
+			</li>
+			<li>
+				<a id="open" title="Open file">
+				Open <span class="dropDownIcon">&#x25BC;</span>
+				</a>
+				<ul id="openMenu">
+					<li>
+						<a id="openFromDisk" title="Open file from disk">Open from disk</a>
+					</li>
+					<li>
+						<a id="openUrl" title="Open file from url">Open url</a>
+					</li>
+					<li id="filesList"></li>
+				</ul>
+			</li>
+			<li>
+				<a id="save" title="Save file">
+				Save <span class="dropDownIcon">&#x25BC;</span>
+				</a>
+				<ul id="saveMenu">
+					<li>
+						<a id="saveToDisk" title="Save file to disk">Save to disk</a>
+					</li>
+					<li>
+						<a id="saveOnline" title="Save and share online">Save online</a>
+					</li>
+				</ul>
+			</li>
+			<li class="settings">
+				<a id="settings" title="Settings">
+				Settings <span class="dropDownIcon">&#x25BC;</span>
+				</a>
+				<ul id="settingsMenu">
+					<li>
+						<div class="indentation">
+							<label for="indentation">Indentation <input id="indentation" value="2" /></label>
+						</div>
+					</li>
+					<li id="schemasList"></li>
+				</ul>
+			</li>
+			<li>
+				<a id="help" title="Open documentation (opens in a new window)" href="https://jsoneditoronline.org/doc/index.html" target="_blank">Help</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div id="auto">
+	<div id="contents">
+		<div id="codeEditor"></div>
+
+		<div id="splitter">
+			<div id="buttons">
+				<div>
+					<button id="toTree" class="convert" title="Copy code to tree editor (Ctrl + >)">
+						<div class="convert-right"></div>
+					</button>
+				</div>
+				<div>
+					<button id="toCode" class="convert" title="Copy tree to code editor (Ctrl + <)">
+						<div class="convert-left"></div>
+					</button>
+				</div>
+			</div>
+			<div id="drag">
+			</div>
+		</div>
+
+		<div id="treeEditor"></div>
+
+		<script type="text/javascript">
+		app.load();
+		app.resize();
+		</script>
+
+		<div id="ad">
+			<ins class="adsbygoogle"
+				 style="display:block"
+				 data-ad-client="ca-pub-5261703613038425"
+				 data-ad-slot="8088219191"
+				 data-ad-format="auto"></ins>
+		</div>
+	</div>
+</div>
+
+<div id="footer">
+	<div id="footer-inner">
+		<a href="https://jsoneditoronline.org" class="footer">JSON Editor Online 4.2.3</a>
+		&bull;
+		<a href="https://moivui.com" target="_blank" class="footer">MoiVui</a>
+		&bull;
+		<a href="https://github.com/josdejong/jsoneditor/" target="_blank" class="footer">Sourcecode</a>
+		&bull;
+		<a href="https://github.com/josdejong/jsoneditor/issues" target="_blank" class="footer">Report a bug</a>
+		&bull;
+		<a href="https://jsoneditoronline.org/datapolicy.txt" target="_blank" class="footer">Data policy</a>
+		&bull;
+		Copyright 2011-2018 Jos de Jong
+	</div>
+</div>
+
+<script type="text/javascript">
+app.resize();
+</script>
+<!-- Begin Cookie Consent plugin by Silktide - https://silktide.com/cookieconsent -->
+<script type="text/javascript">
+window.cookieconsent_options = {"message":"This site uses cookies to personalize ads. Information about your use of this site is shared with Google. By using this site, you agree to its use of cookies.","dismiss":"Got it!","learnMore":"Read more","link":"https://www.google.com/policies/technologies/cookies/","theme":"dark-floating"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-56425235-9"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag( 'config', 'UA-56425235-9');
+</script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</body>
+</html>
